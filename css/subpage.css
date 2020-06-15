@@ -34,7 +34,7 @@
 .subpage-form button[type="submit"] {
   display: block;
 
-  margin: 0 auto;
+  margin: 28px auto;
   border: none;
 
   width: 260px;
@@ -43,4 +43,25 @@
   font-size: 20px;
   color: white;
   text-align: center;
+}
+
+/* 凡庸テキストボックス */
+.text-input {
+  text-align: center;
+}
+
+.text-input + .text-input {
+  margin-top: 18px;
+}
+
+.text-input label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 30px;
+  width: 130px;/* マジックナンバー */
+}
+
+.text-input input {
+  padding: 10px 12px;
+  width: 400px;
 }

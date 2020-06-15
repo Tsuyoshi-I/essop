@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/common.css">
   <!-- 必ず reset→common→(subpage)→各ページcss の順で読み込む -->
   <link rel="stylesheet" href="css/subpage.css">
-  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/login.css">
   <title>ログインページ</title>
 </head>
 
@@ -39,7 +39,15 @@
     </div>
     <div>
       <!-- ここに各コンテンツを書いていく -->
-      <form class="subpage-form">
+      <form action="" class="subpage-form">
+        <div class="text-input">
+          <label>ログインID</label>
+          <input type="text" placeholder="ログインID">
+        </div>
+        <div class="text-input">
+          <label>パスワード</label>
+          <input type="password" placeholder="パスワード">
+        </div>
         <button type="submit">ログイン</button>
       </form>
     </div>
