@@ -1,0 +1,111 @@
+/* ------------------- */
+/* add-cart-menu ------*/
+/* ------------------- */
+
+.add-cart-menu {
+  position: fixed;
+  /* headerの高さ + 余白 ↓ */
+  top: calc(100px + 40px);
+
+  width: 300px;
+  padding: 0 35px;
+}
+
+.product-price {
+  font-size: 25px;
+
+  margin-top: .6em;
+}
+
+.purchase-amount {
+  margin: 15px 0 25px;
+}
+
+.purchase-amount p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.purchase-amount input {
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #bbb;
+
+  width: 90px;
+  height: 35px;
+
+  font-size: 18px;
+}
+
+.add-cart-form button[type="submit"] {
+  border: none;
+  border-radius: 5px;
+  padding: .4em 0;
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+
+  background-color: #8D2202;
+}
+
+.product-stock {
+  margin-top: .5em;
+}
+
+.product-stock span {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding: 3px 5px;
+
+  color: #777;
+}
+
+.product-stock.a-few {
+  color: red;
+  font-size: 18px;
+}
+
+.product-stock.a-few span {
+  border: none;
+  color: inherit;
+  font-size: 24px;
+}
+
+
+/* ------------------- */
+/* individual-main ----*/
+/* ------------------- */
+
+.individual-main {
+  /* background-color: skyblue; */
+  /* ↓add-cart-menuの横幅分 */
+  margin-left: 300px;
+  padding-top: 40px;
+  padding-right: 35px;
+
+  /* ↓add-cart-menuの高さ + ちょい余裕 */
+  min-height: 350px;
+}
+
+/* ------------------- */
+/* メイン商品画像 --------*/
+/* ------------------- */
+
+.main-img {
+  width: 100%;
+}
+
+.main-img img {
+  width: 100%;
+}
+
+/* ------------------- */
+/* features -----------*/
+/* ------------------- */
+
+.features {
+  font-size: 28px;
+  line-height: 1.75em;
+}

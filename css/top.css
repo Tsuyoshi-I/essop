@@ -1,0 +1,81 @@
+/* -------------------------*/
+/* ■ top:バナー -------------*/
+/* -------------------------*/
+/* swipperとかのプラグイン入れる時は
+一回全部スタイル消したほうがいいかも */
+
+.top-baner-wrap {
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.baner-translate {
+  display: flex;
+
+  /* ↓これマジックナンバー */
+  transform: translateX(-74%);
+}
+
+.baner {
+  margin: 0 15px 0;
+
+  width: 80%;
+  flex-shrink: 0;
+}
+
+.baner img {
+  width: 100%;
+}
+
+/* -------------------------*/
+/* ■ カテゴリー一覧-----------*/
+/* -------------------------*/
+.item-list-container {
+  padding: 0 35px;
+  max-width: 1230px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.item-list-title * {
+  text-align: center;
+}
+
+.item-list-title p {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.item-list-title h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-list li {
+  width: calc(100% / 5 - 20px);
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.item-list li:nth-child(5n) {
+  margin-right: 0px;
+}
+
+.item-img img {
+  width: 100%;
+}
+
+.item-info * {
+  line-height: 1.6em;
+}
+
+
+
