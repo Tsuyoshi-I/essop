@@ -1,3 +1,7 @@
+/* -------------------------*/
+/* ■ タイトル ---------------*/
+/* -------------------------*/
+
 .subpage-title-wrap {
   border-bottom: solid 1px whitesmoke;
 
@@ -17,4 +21,26 @@
 .subpage-title-wrap p {
   margin-top: 1em;
   font-size: 14px;
+}
+
+/* -------------------------*/
+/* ■ フォーム ---------------*/
+/* -------------------------*/
+
+.subpage-form {
+  padding: 50px 0 60px;
+}
+
+.subpage-form button[type="submit"] {
+  display: block;
+
+  margin: 0 auto;
+  border: none;
+
+  width: 260px;
+  height: 50px;
+  background-color: #8D2202;
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
