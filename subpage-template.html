@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- 必ず reset→common→(subpage)→各ページcss の順で読み込む -->
+  <link rel="stylesheet" href="css/subpage.css">
+  <title>essop ${商品名}</title>
+</head>
+
+<body>
+  <!-- 
+＿人人人人人人人人人人人人＿
+＞　                   ＜
+＞　   CAUTION!!!      ＜
+＞　                   ＜
+￣Y^Y^ Y^Y^Y^Y^Y^Y^Y^Y^￣
+
+下層ページで共通している構造を抜き出してみたよ。
+下層ページ作る時はこのHTMLをコピペして使ってね。
+-->
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <nav>
+      <ul class="global-menu">
+        <li><a href="">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="">ログイン</a></li>
+        <li><a href="">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <div class="subpage-title-wrap">
+      <h2>Login</h2>
+      <p>ログイン</p>
+    </div>
+    <div>
+      <!-- ここに各コンテンツを書いていく -->
+      <form style="height: 300px"></form>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.subpage-title-wrap {
+  border-bottom: solid 1px whitesmoke;
+
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.subpage-title-wrap > * {
+  text-align: center;
+}
+
+.subpage-title-wrap h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.subpage-title-wrap p {
+  margin-top: 1em;
+  font-size: 14px;
+}

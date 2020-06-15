@@ -33,12 +33,7 @@
 /* -------------------------*/
 /* ■ カテゴリー一覧-----------*/
 /* -------------------------*/
-.item-list-container {
-  padding: 0 35px;
-  max-width: 1230px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 .item-list-title * {
   text-align: center;
 }
