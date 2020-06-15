@@ -5,20 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
-  <!-- 必ずreset.css→style.cssの順で読み込む -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- 必ず reset→common→各ページcss の順で読み込む -->
+  <link rel="stylesheet" href="css/top.css">
   <title>essop トップ</title>
 </head>
 
 <body>
   <header>
     <h1 class="main-logo">
-      <a href="/top.html">
-        <img src="imgs/essop_logo.jpg" alt="">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
       </a>
     </h1>
     <form action="検索結果ページ" class="select-form">
-      <input type="text" placeholder="何かお探しですか？">
+      <input type="text" placeholder="何をお探しですか？">
       <button type="submit">→</button>
     </form>
     <nav>
@@ -51,7 +52,7 @@
       </div>
       <ul class="item-list">
         <li>
-          <a href="商品個別ページ">
+          <a href="product-individual.html">
             <figure class="item-img">
               <img src="imgs/product_item1.jpeg">
             </figure>

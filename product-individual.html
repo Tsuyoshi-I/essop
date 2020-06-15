@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- 必ず reset→common→各ページcss の順で読み込む -->
+  <link rel="stylesheet" href="css/product-individual.css">
+  <title>essop ${商品名}</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <nav>
+      <ul class="global-menu">
+        <li><a href="">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="">ログイン</a></li>
+        <li><a href="">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="add-cart-menu">
+      <h2 class="product-name">とっても素敵なテント（商品名）</h2>
+      <p class="product-price">49,800円</p>
+      <form action="カート？" class="add-cart-form">
+        <div class="purchase-amount">
+          <p>数量</p>
+          <input type="number" min="1" max="100" value="1">
+          <!-- <p class="product-stock">在庫：<span>10+</span></p> -->
+          <!-- 10個以下 ↓-->
+          <p class="product-stock a-few">残り<span>9</span>点</p>
+        </div>
+        <button type="submit">カートに追加</button>
+      </form>
+    </div>
+    <div class="individual-main">
+      <figure class="main-img section-margin">
+        <img src="imgs/product_item1_indiv.jpeg" alt="">
+      </figure>
+      <p class="features">
+        2枚の天板を開くと、シンクロして内側から脚が現れる。
+        画期的な開閉構造を持つテーブルです。
+        天板には環境負荷の少ない竹を使用。
+        抜群の安定性と清潔感あるデザインも魅力です。
+        地上高40cm、新しい快適スペースをリビングに提供します。
+        (大体120文字以下)(多分このテキストもDBにぶち込む)
+      </p>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+
+</html>
