@@ -1,0 +1,57 @@
+/* -------------------------*/
+/* ■ カート -----------------*/
+/* -------------------------*/
+.cart {
+  table-layout: fixed;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  vertical-align: top;
+}
+
+.img-wrap {
+  width: 100%;
+}
+
+.img-wrap img {
+  width: 100%;
+}
+
+.cart tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.item-row td {
+  vertical-align: middle;
+}
+
+/* 画像のこと（クラスつけてもいいかも） */
+.item-row td:first-child {
+  padding-right: 50px;
+}
+
+/* 個数のこと（クラスつけてもいいかも） */
+.item-row input[type="number"] {
+  width: 80px;
+  height: 40px;
+  padding-left: .7em;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 削除ボタンのこと（クラスつけてもいいかも） */
+.item-row td:last-child {
+  text-align: end;
+  padding: 30px;
+}
+
+.product-dlt-btn {
+  padding: .5em 1em;
+  border: none;
+
+  font-size: 16px;
+  color: white;
+
+  background-color: #999;
+}

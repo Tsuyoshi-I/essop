@@ -40,7 +40,27 @@
     <div>
       <!-- ここに各コンテンツを書いていく -->
       <form class="subpage-form">
-        <button type="submit">購入手続きへ進む</button>
+        <table class="cart">
+          <tr>
+            <th class="cart-img-h"></th>
+            <th class="cart-name-h">製品名</th>
+            <th class="cart-price-h">税込単価</th>
+            <th class="cart-amount-h">個数</th>
+            <th class="cart-sum-h">小計</th>
+            <th class="cart-dlt-h"></th>
+          </tr>
+          <tr class="item-row">
+            <td>
+              <div class="img-wrap"><img src="imgs/product_item1.jpeg" alt=""></div>
+            </td>
+            <td>商品名</td>
+            <td>49,800円</td>
+            <td><input type="number" min="1" max="50" value="1"></td>
+            <td>49,800円</td>
+            <td><button type="submit" class="product-dlt-btn">削除</button></td>
+          </tr>
+        </table>
+        <button type="submit" class="dicision-btn">購入手続きへ進む</button>
       </form>
     </div>
   </main>
