@@ -23,6 +23,10 @@ main {
   margin-top: 100px;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* -------------------------*/
 /* ■ ヘッダー ---------------*/
 /* -------------------------*/
@@ -113,6 +117,26 @@ nav {
   max-width: 1230px;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* -------------------------*/
+/* ■ TOPに戻るボタン --------*/
+/* -------------------------*/
+.back-to-top-page {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.back-to-top-page a {
+  border-radius: 4px;
+  padding: 5px 8px;
+  background-color: #777;
+  font-size: 14px;
+  color: white;
+}
+
+.back-to-top-page a:hover {
+  background-color: #aaa;
 }
 
 /* -------------------------*/
