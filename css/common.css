@@ -140,6 +140,36 @@ nav {
 }
 
 /* -------------------------*/
+/* ■ エラー(input用) --------*/
+/* -------------------------*/
+.err-msg-position {
+  position: relative;
+  display: inline;
+}
+.err-msg-position span {
+  position: absolute;
+  top: -30px;
+  right: -17px;
+  background-color: red;
+  font-size: 12px;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.err-msg-position span:after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  right: 10px;
+  display: block;
+  padding-top: 10px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+  border-width: 20px 15px 6px 0px;
+}
+
+/* -------------------------*/
 /* ■ フッター ---------------*/
 /* -------------------------*/
 footer {

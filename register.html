@@ -41,12 +41,18 @@
       <!-- ここに各コンテンツを書いていく -->
       <form class="subpage-form">
         <div class="text-input">
-          <label>お名前</label>
-          <input type="text" placeholder="お名前">
+          <label>氏名</label>
+          <div class="err-msg-position">
+            <input type="text" placeholder="お名前">
+            <span class="error">エラーメッセージ数値入力は必須です。</span>
+          </div>
         </div>
         <div class="text-input">
           <label>メールアドレス</label>
-          <input type="text" placeholder="メールアドレス">
+          <div class="err-msg-position">
+            <input type="text" placeholder="メールアドレス">
+            <span class="error">エラーメッセージ数値入力は必須です。</span>
+          </div>
         </div>
         <div class="text-input">
           <label>住所</label>
@@ -58,7 +64,7 @@
         </div>
         <div class="text-input">
           <label>パスワード</label>
-          <input type="password" placeholder="パスワード">
+          <input type="password" placeholder="パスワード(半角英数)">
         </div>
         <button type="submit" class="dicision-btn">登録</button>
       </form>
