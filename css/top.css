@@ -64,6 +64,10 @@
   margin-right: 0px;
 }
 
+.item-img {
+  padding: 28px 0;
+}
+
 .item-img img {
   width: 100%;
 }
