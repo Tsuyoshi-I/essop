@@ -65,3 +65,15 @@
   padding: 10px 12px;
   width: 400px;
 }
+
+.toggle-show-pass {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(-180%, -50%);
+  /*
+  本来であればrightでやるべきだが、
+  input[type="pass"]とiconのみを囲う親要素が
+  必要になるので、時間の都合で上記で応急処置
+  */
+}

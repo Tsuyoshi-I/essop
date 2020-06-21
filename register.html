@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <!-- 必ず reset→common→(subpage)→各ページcss の順で読み込む -->
@@ -44,22 +46,32 @@
       <!-- ここに各コンテンツを書いていく -->
       <form class="subpage-form">
         <div class="text-input">
+          <label>ログインID</label>
+          <div class="err-msg-position">
+            <input type="text" placeholder="ログインID">
+            <span class="error">ログインIDは必須です。</span>
+          </div>
+        </div>
+        <div class="text-input">
           <label>氏名</label>
           <div class="err-msg-position">
-            <input type="text" placeholder="お名前">
-            <span class="error">エラーメッセージ数値入力は必須です。</span>
+            <input type="text" placeholder="氏名">
+            <span class="error">氏名は必須です。</span>
           </div>
         </div>
         <div class="text-input">
-          <label>メールアドレス</label>
+          <label>TEL</label>
           <div class="err-msg-position">
-            <input type="text" placeholder="メールアドレス">
-            <span class="error">エラーメッセージ数値入力は必須です。</span>
+            <input type="text" placeholder="TEL(半角数字)" pattern="^[0-9]+$">
+            <span class="error">TELは必須です</span>
           </div>
         </div>
         <div class="text-input">
-          <label>住所</label>
-          <input type="text" placeholder="住所">
+          <label>TEL</label>
+          <div class="err-msg-position">
+            <input type="text" placeholder="住所">
+            <span class="error">住所は必須です</span>
+          </div>
         </div>
         <div class="text-input">
           <label>ログインID</label>
@@ -68,6 +80,10 @@
         <div class="text-input">
           <label>パスワード</label>
           <input type="password" placeholder="パスワード(半角英数)">
+        </div>
+        <div class="text-input">
+          <label>パスワード</label>
+          <input type="password" placeholder="パスワード(半角英数)"></input>
         </div>
         <button type="submit" class="dicision-btn">登録</button>
       </form>
@@ -81,6 +97,7 @@
     <script type="text/javascript">document.write(new Date().getFullYear());</script>
     essop Inc.
   </footer>
+  <script src="js/passToggle.js"></script>
 </body>
 
 </html>
