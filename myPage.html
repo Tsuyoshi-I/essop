@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- 必ず reset→common→(subpage)→各ページcss の順で読み込む -->
+  <link rel="stylesheet" href="css/subpage.css">
+  <link rel="stylesheet" href="css/my-page.css">
+  <title>essop ${商品名}</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <!-- ユーザー名はログインしている時だけ↓ -->
+    <p>ユーザー名：ほげほげ</p>
+    <nav>
+      <ul class="global-menu">
+        <!-- 「会員登録」はログイン時消す↓ -->
+        <li><a href="register.html">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="login.html">ログイン</a></li>
+        <li><a href="cart.html">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <div class="subpage-title-wrap">
+      <h2>My Page</h2>
+      <p>マイページ</p>
+    </div>
+    <div class="my-page-nav">
+      <ul>
+        <li>
+          <a href="editProf.html">
+            <div><i class="fas fa-user-edit"></i></div>
+            <p>登録情報変更</p>
+          </a>
+        </li>
+        <li>
+          <a href="mgrPro.html">
+            <div><i class="fas fa-tools"></i></div>
+            <p>管理者TOP</p>
+          </a>
+        </li>
+        <li>
+          <a href="logout.html">
+            <div><i class="fas fa-sign-out-alt"></i></div>
+            <p>ログアウト</p>
+          </a>
+        </li>
+        <li>
+          <a href="deleteAccount.html">
+            <div><i class="fas fa-user-slash"></i></div>
+            <p>退会</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 購入履歴 -->
+    <table class="history">
+      <caption>購入履歴</caption>
+      <tr>
+        <th class="history-img-h"></th>
+        <th class="history-name-h">商品名</th>
+        <th class="history-price-h">税込単価</th>
+        <th class="history-amount-h">個数</th>
+        <th class="history-sum-h">小計</th>
+      </tr>
+      <tr class="item-row">
+        <td>
+          <div class="img-wrap"><img src="imgs/2000035724.jpg" alt=""></div>
+        </td>
+        <td>商品名</td>
+        <td>49,800円</td>
+        <td>2</td>
+        <td>99,600円</td>
+      </tr>
+      <tr class="item-row">
+        <td>
+          <div class="img-wrap"><img src="imgs/2000035724.jpg" alt=""></div>
+        </td>
+        <td>商品名</td>
+        <td>49,800円</td>
+        <td>2</td>
+        <td>99,600円</td>
+      </tr>
+    </table>
+    <div class="back-to-top-page">
+      <a href="top.html">TOPページに戻る</a>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+
+</html>
