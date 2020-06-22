@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品登録画面</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/subpage.css" rel="stylesheet">
+<link href="css/manager.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <p>ユーザー名：ほげほげ</p>
+    <nav>
+      <ul class="global-menu">
+        <!-- 「会員登録」はログイン時消す↓ -->
+        <li><a href="register.html">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="login.html">ログイン</a></li>
+        <li><a href="cart.html">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <div class="subpage-title-wrap">
+      <h2>商品管理</h2>
+    </div>
+    <div class="mgrpage-title-wrap">
+      <h2>商品登録</h2>
+    </div> 
+    <p class="desc">登録情報を入力してください</p>
+    <form action="mgrProInsertConfirm.html" method="post" class="subpage-form">
+      <div class="text-input">
+        <label class="width80-label">商品名</label>
+        <div class="err-msg-position">
+          <input type="text" id="productName" name="productName" placeholder="商品名" required>
+          <span class="error">商品名は必須です</span>
+        </div>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">価格</label>
+        <div class="err-msg-position">
+          <input type="text" id="price" name="price" placeholder="価格(半角数字)" pattern="^[0-9]+$" required>
+          <span class="error">価格は必須です</span>
+        </div>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">仕入数</label>
+        <div class="err-msg-position">
+          <input type="text" id="perchase" name="perchase" placeholder="仕入数(半角数字)" pattern="^[0-9]+$" required>
+          <span class="error">仕入数は必須です</span>
+        </div>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">画像</label>
+        <button>ファイルを選択</button>
+        <div class="err-msg-position">
+          <input type="text" id="imagePath" name="imagePath" placeholder="画像" class="img-input" required>
+          <span class="error">画像は必須です</span>
+        </div>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">カテゴリー</label>
+        <select name="category">
+          <option value="1">キャンプ</option>
+          <option value="2" selected>メンズ</option>
+          <option value="3">ウィメンズ</option>
+          <option value="4">キッズ</option>
+          <option value="5">アクセサリー</option>
+        </select>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">商品説明</label>
+        <div class="err-msg-position">
+          <textarea cols="50" rows="6" id="productText" name="productText" placeholder="商品説明" required></textarea>
+          <span class="error">商品説明は必須です</span>
+        </div>
+      </div>
+      <button type="submit" class="dicision-btn">確認</button>
+    </form>
+    <div class="back-to-top-page">
+      <a href="mgrPro.html">戻る</a>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+</html>

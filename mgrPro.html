@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品管理画面</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/subpage.css" rel="stylesheet">
+<link href="css/manager.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <p>ユーザー名：ほげほげ</p>
+    <nav>
+      <ul class="global-menu">
+        <!-- 「会員登録」はログイン時消す↓ -->
+        <li><a href="register.html">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="login.html">ログイン</a></li>
+        <li><a href="cart.html">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <div class="subpage-title-wrap">
+      <h2>商品管理</h2>
+    </div>
+    <div class="mgrpage-title-wrap">
+      <h2>商品検索</h2>
+    </div> 
+    <p class="desc">検索したい商品情報を入力してください</p>
+    <form class="subpage-form">
+      <div class="text-input">
+        <label class="width80-label">カテゴリー</label>
+    	  <select class="pro-search">
+    	    <option selected>all</option>
+    	    <option>キャンプ</option>
+    	    <option>メンズ</option>
+          <option>ウィメンズ</option>
+          <option>キッズ</option>
+          <option>アクセサリー</option>
+    	  </select>
+      </div>
+    	<div class="text-input">
+        <label class="width80-label">在庫数</label>
+        <select class="pro-search">
+          <option selected>all</option>
+          <option>5点以下</option>
+          <option>10点以下</option>
+          <option>15点以下</option>
+          <option>20点以下</option>
+        </select>
+      </div>
+      <button style="submit" class="dicision-btn">検索</button>
+      <button style="submit" class="dicision-btn">新規登録</button>
+    </form>
+    <div  class="back-to-top-page">
+      <a href="mgrTop.html">戻る</a>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+</html>

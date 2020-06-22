@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品検索結果画面</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/subpage.css" rel="stylesheet">
+<link href="css/manager.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <p>ユーザー名：ほげほげ</p>
+    <nav>
+      <ul class="global-menu">
+        <!-- 「会員登録」はログイン時消す↓ -->
+        <li><a href="register.html">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="login.html">ログイン</a></li>
+        <li><a href="cart.html">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <div class="subpage-title-wrap">
+      <h2>商品管理</h2>
+    </div>
+    <div class="mgrpage-title-wrap">
+      <h2>検索結果</h2>
+    </div> 
+    <p class="desc">更新または削除したい商品を選択してください</p>
+    <form class="subpage-form">
+      <table class="pro-select-result">
+        <tr>
+          <th></th>
+          <th>画像</th>
+          <th>商品名</th>
+          <th>在庫数</th>
+          <th>価格</th>
+          <th>カテゴリー</th>
+        </tr>
+        <tr class="item-row">
+          <td><input type="radio" name="check" value="1" checked></button></td>
+          <td>
+            <div class="img-wrap"><img src="imgs/product_item1.jpeg" alt=""></div>
+          </td>
+          <td>テント</td>
+          <td>10</td>
+          <td>10000</td>
+          <td>キャンプ</td>
+        </tr>
+        <tr class="item-row">
+          <td><input type="radio" name="check" value="2"></button></td>
+          <td>
+            <div class="img-wrap"><img src="imgs/product_item1.jpeg" alt=""></div>
+          </td>
+          <td>ジャケット</td>
+          <td>15</td>
+          <td>8000</td>
+          <td>キャンプ</td>
+        </tr>
+        <tr class="item-row">
+          <td><input type="radio" name="check" value="3"></button></td>
+          <td>
+            <div class="img-wrap"><img src="imgs/product_item1.jpeg" alt=""></div>
+          </td>
+          <td>サンダル</td>
+          <td>1</td>
+          <td>4000</td>
+          <td>キャンプ</td>
+        </tr>
+      </table>
+      <button type="submit" class="dicision-btn">更新</button>
+      <button type="submit" class="dicision-btn">削除</button>
+    </form>
+    <div class="back-to-top-page">
+      <a href="mgrPro.html">戻る</a>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+</html>

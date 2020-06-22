@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品削除確認画面</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/subpage.css" rel="stylesheet">
+<link href="css/manager.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <p>ユーザー名：ほげほげ</p>
+    <nav>
+      <ul class="global-menu">
+        <!-- 「会員登録」はログイン時消す↓ -->
+        <li><a href="register.html">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="login.html">ログイン</a></li>
+        <li><a href="cart.html">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <div class="subpage-title-wrap">
+      <h2>商品管理</h2>
+    </div>
+    <div class="mgrpage-title-wrap">
+      <h2>商品削除確認</h2>
+    </div> 
+    <p class="desc">この内容でよろしいですか？</p>
+
+    <form action="mgrProDeleteResult.html" method="post" class="subpage-form">
+      <div class="text-input">
+        <label class="width80-label">商品名</label>
+        <input type="text" name="productName" placeholder="商品名" value="テント" readonly>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">価格</label>
+        <input type="text" name="price" placeholder="価格(半角数字)" value="50000" readonly>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">在庫数</label>
+        <input type="text" name="stock" placeholder="在庫数(半角数字)" value="10" readonly>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">画像</label>
+        <input type="text" name="imagePath" placeholder="画像" value="img01" readonly>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">カテゴリー</label>
+        <input type="text" name="category" placeholder="カテゴリー" value="キャンプ" readonly>
+      </div>
+      <div class="text-input">
+        <label class="width80-label">商品説明</label>
+        <textarea cols="50" rows="6" name="productText" placeholder="商品説明" readonly>大きい</textarea>
+      </div>
+      <div>
+        <button style="submit" class="dicision-btn">削除</button>
+      </div>
+    </form>
+    <div class="back-to-top-page">
+      <a href="mgrProSelectResult.html">戻る</a>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+</html>

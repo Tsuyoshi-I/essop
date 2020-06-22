@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ユーザー削除画面</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/subpage.css" rel="stylesheet">
+<link href="css/manager.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <p>ユーザー名：ほげほげ</p>
+    <nav>
+      <ul class="global-menu">
+        <!-- 「会員登録」はログイン時消す↓ -->
+        <li><a href="register.html">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="login.html">ログイン</a></li>
+        <li><a href="cart.html">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <div class="subpage-title-wrap">
+      <h2>ユーザー管理</h2>
+    </div>
+    <div class="mgrpage-title-wrap">
+      <h2>ユーザー削除</h2>
+    </div> 
+    <p class="desc">削除するユーザーのログインIDを入力してください</p>
+
+    <form action="mgrUserDeleteConfirm.html" class="subpage-form">
+      <div class="text-input">
+        <label class="width80-label">ログインID</label>
+        <div class="err-msg-position">
+          <input id="loginId" type="text" name="loginId" placeholder="ログインID" required>
+          <span class="error">ログインIDは必須です</span>
+        </div>
+      </div>
+      <button type="submit" class="dicision-btn">検索</button>
+    </form>
+    <div class="back-to-top-page">
+      <a href="mgrUser.html">戻る</a>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+</html>

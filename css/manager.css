@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+body {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.desc {
+  margin-top: 40px;
+}
+
+.not-found .desc {
+  margin: 40px auto;
+}
+
+.mgrpage-title-wrap h2 {
+  font-size: 25px;
+  font-weight: normal;
+  padding-top: 70px;
+}
+
+/* -------------------------*/
+/* ■ 商品検索結果 -----------*/
+/* -------------------------*/
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: 50px auto;
+}
+
+table tr{
+  border-bottom: solid 1px #eee;
+}
+
+table th,table td{
+  text-align: center;
+  width: 10%;
+  padding: 15px 0;
+}
+
+textarea{
+  vertical-align:top;
+}
+
+
+/* -------------------------*/
+/* ■ フォーム ---------------*/
+/* -------------------------*/
+
+/* エラーメッセージ */
+.error-msg {
+  color: red;
+  margin-top: 25px;
+}
+
+.dicision-btn {
+  display: block;
+  margin: 28px auto;
+  border: none;
+  width: 260px;
+  height: 50px;
+  background-color: #8D2202;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.text-input select, textarea {
+  padding: 10px 12px;
+  width: 400px;
+}
+
+.text-input > .width32-label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 30px;
+  width: 32px;
+}
+
+.text-input > .width80-label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 30px;
+  width: 80px;
+}
+
+.text-input > .rePass-label {
+  display: inline-block;
+  -align: right;
+  margin-right: 20px;
+  width: 140px;
+}
+
+/* 商品検索プルダウン */
+.text-input .pro-search {
+  padding: 10px 12px;
+  width: 200px;
+}
+
+/* 画像選択 */
+.text-input .img-input {
+  width: 285px;
+}
+
+/* -------------------------*/
+/* ■商品検索結果画面 ---------*/
+/* -------------------------*/
+
+.pro-select-result {
+  table-layout: fixed;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  vertical-align: top;
+}
+.img-wrap {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-wrap img {
+  width: 100%;
+}
+
+.item-row td {
+  vertical-align: middle;
+}
+
+/* -------------------------*/
+/* ■パスワード表示切替 --------*/
+/* -------------------------*/
+
+.field-icon {
+  color: #555;
+  margin-right: 15px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* -------------------------*/
+/* ■ 正常に〇〇されました ----*/
+/* -------------------------*/
+.desc-result {
+  margin: 30px auto;
+}
+
+caption {
+  font-size: x-large;
+  margin: 50px auto;
+}
