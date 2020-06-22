@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="css/common.css">
   <!-- 必ず reset→common→(subpage)→各ページcss の順で読み込む -->
   <link rel="stylesheet" href="css/subpage.css">
-  <link rel="stylesheet" href="css/login.css">
-  <title>ログインページ</title>
+  <link rel="stylesheet" href="css/logout.css">
+  <title>ログアウトページ</title>
 </head>
 
 <body>
@@ -37,31 +37,23 @@
   </header>
   <main class="common-one-column">
     <div class="subpage-title-wrap">
-      <h2>Login</h2>
-      <p>ログイン</p>
+      <h2>Logout</h2>
+      <p>ログアウト</p>
     </div>
     <div>
       <!-- ここに各コンテンツを書いていく -->
-      <form action="" class="subpage-form">
-        <div class="text-input">
-          <label>ログインID</label>
-          <input type="text" pattern="^[0-9]+$" placeholder="ログインID">
-        </div>
-        <div class="text-input">
-          <label>パスワード</label>
-          <input type="password" placeholder="パスワード">
-        </div>
-        <button type="submit" class="dicision-btn">ログイン</button>
-        <div class="register-link">
-          <p>↓会員登録がまだの方はこちら↓</p>
-          <!-- 何も処理せずregister.jspにフォワード -->
-          <button type="submit" class="dicision-btn">会員登録</a>
+      <form action="" class="subpage-form logout-form">
+        <p>ログアウトしますか？</p>
+        <div class="btn-wrap">
+          <!-- ログアウト処理してtopへ↓ -->
+          <button type="submit" class="dicision-btn">はい</button>
+          <!-- topにフォワードするだけ↓ -->
+          <button type="submit" class="dicision-btn">いいえ</button>
         </div>
       </form>
-
     </div>
     <div class="back-to-top-page">
-      <a href="top.html">TOPページに戻る</a>
+      <a href="myPage.html">戻る</a>
     </div>
   </main>
   <footer>
