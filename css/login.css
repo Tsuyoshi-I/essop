@@ -1,0 +1,13 @@
+.register-link {
+  margin-top: 20px;
+}
+
+.register-link .dicision-btn {
+  margin-top: 0;
+  line-height: 50px;
+}
+
+.register-link p {
+  font-size: 12px;
+  text-align: center;
+}
