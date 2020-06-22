@@ -13,10 +13,12 @@ const rePass = document.getElementById("rePass")
  */
 const ONLY_HALF_WIDTH_NUM = "^[0-9]+$"// 半角数字のみ
 const LENGTH_AND_FORMAT_LIMIT = "[!-~]{4,16}" // 4文字以上16文字以下の記号含む半角英数
+const ADDRESS_FORMAT = "^.{0,50}$"
 
 tel.setAttribute("pattern", ONLY_HALF_WIDTH_NUM)
 pass.setAttribute("pattern", LENGTH_AND_FORMAT_LIMIT)
 rePass.setAttribute("pattern", LENGTH_AND_FORMAT_LIMIT)
+address.setAttribute("pattern", ADDRESS_FORMAT)
 
 tel.addEventListener("input", function () {
   this.setCustomValidity("")

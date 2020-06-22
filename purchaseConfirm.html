@@ -36,14 +36,36 @@
     </nav>
   </header>
   <main class="common-one-column">
-    <div class="subpage-title-wrap">
+    <!-- <div class="subpage-title-wrap">
       <h2>Shopping Cart</h2>
       <p>ショッピングカート</p>
-    </div>
-    <div>
-      <!-- ↓カートが空の時のみ@cart-empty -->
-      <p class="cart-empty">カートは空です</p>
-      <form class="subpage-form">
+    </div> -->
+    <div class="purchase">
+      <div class="subpage-title-wrap">
+        <h2>購入情報確定</h2>
+      </div>
+      <div class="confirm-msg">
+        <p>以下の情報で確定します。</p>
+        <p>よろしいですか？</p>
+      </div>
+      <form class="subpage-form" id="form">
+        <div class="text-input">
+          <label>氏名</label>
+          <input type="text" placeholder="氏名" value="田中太郎" id="userName" readonly>
+        </div>
+        <div class="text-input">
+          <label>TEL</label>
+          <input type="text" placeholder="TEL(半角数字)" value="0120333906" id="tel" readonly>
+        </div>
+        <div class="text-input">
+          <label>お届け先</label>
+          <input type="text" placeholder="住所" value="東京都港区" id="address" readonly>
+        </div>
+        <div class="text-input">
+          <label>お支払方法</label>
+          <!-- 選択されたほうのみ表示する -->
+          <input name="pay" type="text" value="代引き" readonly>
+        </div>
         <table class="cart">
           <tr>
             <th class="cart-img-h"></th>
@@ -51,7 +73,6 @@
             <th class="cart-price-h">税込単価</th>
             <th class="cart-amount-h">個数</th>
             <th class="cart-sum-h">小計</th>
-            <th class="cart-dlt-h"></th>
           </tr>
           <tr class="item-row">
             <td>
@@ -59,28 +80,19 @@
             </td>
             <td>商品名</td>
             <td>49,800円</td>
-            <td>
-              <select name="" id="">
-                <!-- ↓for文でレンダリングします -->
-                <option value="1">1</option>
-                <option value="50">50</option>
-              </select>
-            </td>
+            <td>1</td>
             <td>49,800円</td>
-            <td><button type="submit" class="product-dlt-btn">削除</button></td>
           </tr>
         </table>
         <div class="cart-all-sum">
           <p>合計</p>
           <p>1000000円</p>
         </div>
-        <!-- ログインしていない状態で押した場合はログインページへ飛ばす。 -->
-        <!-- カートのセッション情報は保持 -->
-        <button type="submit" class="dicision-btn">購入手続きへ進む</button>
+        <button type="submit" class="dicision-btn">確定</button>
       </form>
     </div>
     <div class="back-to-top-page">
-      <a href="top.html">TOPページに戻る</a>
+      <a href="cart.html">戻る</a>
     </div>
   </main>
   <footer>

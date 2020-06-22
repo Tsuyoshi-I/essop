@@ -9,6 +9,12 @@
   padding-bottom: 30px;
 }
 
+/* 完了画面用 */
+.subpage-title-wrap.result-page {
+  border: none;
+  margin: 60px;
+}
+
 .subpage-title-wrap > * {
   text-align: center;
 }

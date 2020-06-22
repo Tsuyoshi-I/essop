@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- 必ず reset→common→(subpage)→各ページcss の順で読み込む -->
+  <link rel="stylesheet" href="css/subpage.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <title>ショッピングカート</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <!-- ユーザー名はログインしている時だけ↓ -->
+    <p>ユーザー名：ほげほげ</p>
+    <nav>
+      <ul class="global-menu">
+        <!-- 「会員登録」はログイン時消す↓ -->
+        <li><a href="register.html">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="login.html">ログイン</a></li>
+        <li><a href="cart.html">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <!-- <div class="subpage-title-wrap">
+      <h2>Shopping Cart</h2>
+      <p>ショッピングカート</p>
+    </div> -->
+    <div class="purchase">
+      <div class="subpage-title-wrap">
+        <h2>購入情報</h2>
+      </div>
+      <form class="subpage-form" id="form">
+        <div class="text-input">
+          <label>氏名</label>
+          <input type="text" placeholder="氏名" value="田中太郎" id="userName" readonly>
+        </div>
+        <div class="text-input">
+          <label>TEL</label>
+          <input type="text" placeholder="TEL(半角数字)" value="0120333906" id="tel" readonly>
+        </div>
+        <div class="text-input">
+          <label>お届け先</label>
+          <input type="text" placeholder="住所" value="東京都港区" id="address" readonly>
+        </div>
+        <table class="cart">
+          <tr>
+            <th class="cart-img-h"></th>
+            <th class="cart-name-h">製品名</th>
+            <th class="cart-price-h">税込単価</th>
+            <th class="cart-amount-h">個数</th>
+            <th class="cart-sum-h">小計</th>
+          </tr>
+          <tr class="item-row">
+            <td>
+              <div class="img-wrap"><img src="imgs/product_item1.jpeg" alt=""></div>
+            </td>
+            <td>商品名</td>
+            <td>49,800円</td>
+            <td>1</td>
+            <td>49,800円</td>
+          </tr>
+        </table>
+        <div class="cart-all-sum">
+          <p>合計</p>
+          <p>1000000円</p>
+        </div>
+        <p class="pay-title">お支払方法を選択してください</p>
+        <div class="radio-wrap">
+          <p>お支払方法</p>
+          <div class="deli">
+            <input name="pay" type="radio" value="onDelivery" checked>
+            <label>代引き</label>
+          </div>
+          <div class="conveni">
+            <input name="pay" type="radio" value="onConvenience">
+            <label>コンビニ払い</label>
+          </div>
+        </div>
+        <button type="submit" class="dicision-btn">購入情報確認画面へ</button>
+      </form>
+    </div>
+    <div class="back-to-top-page">
+      <a href="cart.html">戻る</a>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+</body>
+
+</html>

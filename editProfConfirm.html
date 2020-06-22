@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- 必ず reset→common→(subpage)→各ページcss の順で読み込む -->
+  <link rel="stylesheet" href="css/subpage.css">
+  <title>登録情報変更</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="main-logo">
+      <a href="top.html">
+        <img src="imgs/essop_logo.png" alt="">
+      </a>
+    </h1>
+    <form action="検索結果ページ" class="select-form">
+      <input type="text" placeholder="何をお探しですか？">
+      <button type="submit">→</button>
+    </form>
+    <!-- ユーザー名はログインしている時だけ↓ -->
+    <p>ユーザー名：ほげほげ</p>
+    <nav>
+      <ul class="global-menu">
+        <!-- 「会員登録」はログイン時消す↓ -->
+        <li><a href="register.html">会員登録</a></li>
+        <!-- 下部ログインは、ログイン時はマイページに -->
+        <li><a href="login.html">ログイン</a></li>
+        <li><a href="cart.html">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="common-one-column">
+    <div class="subpage-title-wrap">
+      <h2>Edit</h2>
+      <p>登録情報変更</p>
+    </div>
+    <div class="confirm-msg">
+      <p>以下の情報で確定します。</p>
+      <p>よろしいですか？</p>
+    </div>
+    <div>
+      <!-- ここに各コンテンツを書いていく -->
+      <form class="subpage-form" id="form">
+        <!-- 前画面の入力値を初期値に -->
+        <div class="text-input">
+          <label>氏名</label>
+          <input type="text" placeholder="氏名" id="userName" readonly>
+        </div>
+        <div class="text-input">
+          <label>TEL</label>
+          <input type="text" placeholder="TEL(半角数字)" id="tel" readonly>
+        </div>
+        <div class="text-input">
+          <label>住所</label>
+          <input type="text" placeholder="住所" id="address" readonly>
+        </div>
+        <div class="text-input">
+          <label>パスワード</label>
+          <input type="password" placeholder="パスワード(半角英数)" id="pass" readonly>
+        </div>
+        <button type="submit" class="dicision-btn">変更する</button>
+      </form>
+    </div>
+    <div class="back-to-top-page">
+      <a href="editProf.html">戻る</a>
+    </div>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+  <script src="js/passToggle.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+
+</html>
