@@ -41,7 +41,8 @@
       <p>ショッピングカート</p>
     </div>
     <div>
-      <!-- ここに各コンテンツを書いていく -->
+      <!-- ↓カートが空の時のみ@cart-empty -->
+      <p class="cart-empty">カートは空です</p>
       <form class="subpage-form">
         <table class="cart">
           <tr>
@@ -63,6 +64,8 @@
             <td><button type="submit" class="product-dlt-btn">削除</button></td>
           </tr>
         </table>
+        <!-- ログインしていない状態で押した場合はログインページへ飛ばす。 -->
+        <!-- カートのセッション情報は保持 -->
         <button type="submit" class="dicision-btn">購入手続きへ進む</button>
       </form>
     </div>
