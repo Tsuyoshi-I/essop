@@ -44,46 +44,31 @@
     </div>
     <div>
       <!-- ここに各コンテンツを書いていく -->
-      <form class="subpage-form">
+      <form class="subpage-form" id="form">
+        <p class="common-error">パスワードが一致しません</p>
         <div class="text-input">
           <label>ログインID</label>
-          <div class="err-msg-position">
-            <input type="text" placeholder="ログインID">
-            <span class="error">ログインIDは必須です。</span>
-          </div>
+          <input type="text" placeholder="ログインID" id="loginId" required>
         </div>
         <div class="text-input">
           <label>氏名</label>
-          <div class="err-msg-position">
-            <input type="text" placeholder="氏名">
-            <span class="error">氏名は必須です。</span>
-          </div>
+          <input type="text" placeholder="氏名" id="userName" required>
         </div>
         <div class="text-input">
           <label>TEL</label>
-          <div class="err-msg-position">
-            <input type="text" placeholder="TEL(半角数字)" pattern="^[0-9]+$">
-            <span class="error">TELは必須です</span>
-          </div>
+          <input type="text" placeholder="TEL(半角数字)" id="tel" required>
         </div>
         <div class="text-input">
-          <label>TEL</label>
-          <div class="err-msg-position">
-            <input type="text" placeholder="住所">
-            <span class="error">住所は必須です</span>
-          </div>
-        </div>
-        <div class="text-input">
-          <label>ログインID</label>
-          <input type="text" placeholder="ログインID">
+          <label>住所</label>
+          <input type="text" placeholder="住所" id="address" required>
         </div>
         <div class="text-input">
           <label>パスワード</label>
-          <input type="password" placeholder="パスワード(半角英数)">
+          <input type="password" placeholder="パスワード(半角英数)" id="pass" required>
         </div>
         <div class="text-input">
-          <label>パスワード</label>
-          <input type="password" placeholder="パスワード(半角英数)"></input>
+          <label>パスワード(再入力)</label>
+          <input type="password" placeholder="パスワード(半角英数)" id="rePass" required>
         </div>
         <button type="submit" class="dicision-btn">登録</button>
       </form>
@@ -98,6 +83,7 @@
     essop Inc.
   </footer>
   <script src="js/passToggle.js"></script>
+  <script src="js/validation.js"></script>
 </body>
 
 </html>
