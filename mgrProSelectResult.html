@@ -2,13 +2,14 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>商品検索結果画面</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/common.css" rel="stylesheet">
-<link href="css/subpage.css" rel="stylesheet">
-<link href="css/manager.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品検索結果画面</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/subpage.css" rel="stylesheet">
+  <link href="css/manager.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
     </div>
     <div class="mgrpage-title-wrap">
       <h2>検索結果</h2>
-    </div> 
+    </div>
     <p class="desc">更新または削除したい商品を選択してください</p>
     <form class="subpage-form">
       <table class="pro-select-result">
@@ -58,7 +59,9 @@
           </td>
           <td>テント</td>
           <td>10</td>
-          <td>10000</td>
+          <td>
+            <p class="price-cell txal-center">10000</p>
+          </td>
           <td>キャンプ</td>
         </tr>
         <tr class="item-row">
@@ -68,7 +71,9 @@
           </td>
           <td>ジャケット</td>
           <td>15</td>
-          <td>8000</td>
+          <td>
+            <p class="price-cell txal-center">10000</p>
+          </td>
           <td>キャンプ</td>
         </tr>
         <tr class="item-row">
@@ -78,13 +83,21 @@
           </td>
           <td>サンダル</td>
           <td>1</td>
-          <td>4000</td>
+          <td>
+            <p class="price-cell txal-center">10000</p>
+          </td>
           <td>キャンプ</td>
         </tr>
       </table>
       <button type="submit" class="dicision-btn">更新</button>
       <button type="submit" class="dicision-btn">削除</button>
     </form>
+    <!-- 検索結果が無かった場合 -->
+    <!-- 
+    <div class="not-found">
+      <p class="desc">入力された条件に該当する商品は見つかりませんでした</p>
+    </div>
+    -->
     <div class="back-to-top-page">
       <a href="mgrPro.html">戻る</a>
     </div>
@@ -94,5 +107,7 @@
     <script type="text/javascript">document.write(new Date().getFullYear());</script>
     essop Inc.
   </footer>
+  <script src="js/validation.js"></script>
 </body>
+
 </html>

@@ -2,13 +2,14 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ユーザー検索画面</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/common.css" rel="stylesheet">
-<link href="css/subpage.css" rel="stylesheet">
-<link href="css/manager.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーザー検索画面</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/subpage.css" rel="stylesheet">
+  <link href="css/manager.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
     </div>
     <div class="mgrpage-title-wrap">
       <h2>ユーザー検索</h2>
-    </div> 
+    </div>
     <p class="desc">検索したいユーザー情報を入力してください</p>
     <p class="error-msg">検索条件を入力してください</p>
     <form action="mgrUserSelectResult.html" class="subpage-form">
@@ -51,7 +52,7 @@
         <label class="width32-label">TEL</label>
         <input type="text" id="tel" name="tel" placeholder="TEL(半角数字)" pattern="^[0-9]+$" required>
       </div>
-    <button type="submit" class="dicision-btn">検索</button>
+      <button type="submit" class="dicision-btn">検索</button>
     </form>
     <div class="back-to-top-page">
       <a href="mgrUser.html">戻る</a>
@@ -62,5 +63,7 @@
     <script type="text/javascript">document.write(new Date().getFullYear());</script>
     essop Inc.
   </footer>
+  <script src="js/validation.js"></script>
 </body>
+
 </html>

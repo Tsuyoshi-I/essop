@@ -2,15 +2,16 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ユーザー更新情報入力画面</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/common.css" rel="stylesheet">
-<link href="css/subpage.css" rel="stylesheet">
-<link href="css/manager.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーザー更新情報入力画面</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/subpage.css" rel="stylesheet">
+  <link href="css/manager.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,52 +42,34 @@ integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV
     </div>
     <div class="mgrpage-title-wrap">
       <h2>ユーザー更新</h2>
-    </div> 
+    </div>
     <p class="desc">変更内容を入力してください</p>
     <p class="error-msg">入力されたログインIDは既に使用されています</p>
     <!-- <p class="error-msg">パスワードが一致しません</p> -->
     <form action="mgrUserUpdateConfirm.html" class="subpage-form">
       <div class="text-input">
         <label>ログインID</label>
-        <div class="err-msg-position">
-          <input type="text" id="loginId" name="loginId" placeholder="ログインID" required>
-          <span class="error">ログインIDは必須です</span>
-        </div>
+        <input type="text" id="loginId" name="loginId" placeholder="ログインID" required>
       </div>
       <div class="text-input">
         <label>氏名</label>
-        <div class="err-msg-position">
-          <input type="text" id="userName name="userName" placeholder="氏名" value="alice" required>
-          <span class="error">氏名は必須です</span>
-        </div>
+        <input type="text" id="userName name=" userName" placeholder="氏名" value="alice" required>
       </div>
       <div class="text-input">
         <label>TEL</label>
-        <div class="err-msg-position">
-          <input type="text" id="tel" name="tel" placeholder="TEL(半角)" value="19980406" pattern="^[0-9]+$" required>
-          <span class="error">TELは必須です</span>
-        </div>
+        <input type="text" id="tel" name="tel" placeholder="TEL(半角)" value="19980406" pattern="^[0-9]+$" required>
       </div>
       <div class="text-input">
         <label>住所</label>
-        <div class="err-msg-position">
-          <input type="text" id="address" name="address" placeholder="住所" value="神奈川県" required>
-          <span class="error">住所は必須です</span>
-        </div>
+        <input type="text" id="address" name="address" placeholder="住所" value="神奈川県" required>
       </div>
       <div class="text-input">
         <label>パスワード</label>
-        <div class="err-msg-position">
-          <input type="password" id="pass" name="pass" placeholder="パスワード(半角英数)" value="pw12345" required>
-          <span class="error">パスワードは必須です</span>
-        </div>
+        <input type="password" id="pass" name="pass" placeholder="パスワード(半角英数)" value="pw12345" required>
       </div>
       <div class="text-input">
         <label class="rePass-label">パスワード(再入力)</label>
-        <div class="err-msg-position">
-          <input type="password" id="rePass" name="rePass" placeholder="パスワード(再入力)" value="pw12345" required>
-          <span class="error">パスワード(再入力)は必須です</span>
-        </div>
+        <input type="password" id="rePass" name="rePass" placeholder="パスワード(再入力)" value="pw12345" required>
       </div>
       <div class="text-input">
         <label>権限</label> <select name="roleId">
@@ -101,12 +84,14 @@ integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV
     <div class="back-to-top-page">
       <a href="mgrUserUpdate.html">戻る</a>
     </div>
-</main>
-<footer>
-  ©
-  <script type="text/javascript">document.write(new Date().getFullYear());</script>
-  essop Inc.
-</footer>
-<script src="js/passToggle.js"></script>
+  </main>
+  <footer>
+    ©
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    essop Inc.
+  </footer>
+  <script src="js/passToggle.js"></script>
+  <script src="js/validation.js"></script>
 </body>
+
 </html>

@@ -3,8 +3,9 @@
 /* -------------------------*/
 
 .subpage-title-wrap {
-  border-bottom: solid 1px whitesmoke;
+  font-family: 'Playfair Display', serif;
 
+  border-bottom: solid 1px whitesmoke;
   padding-top: 70px;
   padding-bottom: 30px;
 }

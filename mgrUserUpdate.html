@@ -2,13 +2,14 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ユーザー更新画面</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/common.css" rel="stylesheet">
-<link href="css/subpage.css" rel="stylesheet">
-<link href="css/manager.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーザー更新画面</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/subpage.css" rel="stylesheet">
+  <link href="css/manager.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,15 +40,12 @@
     </div>
     <div class="mgrpage-title-wrap">
       <h2>ユーザー更新</h2>
-    </div> 
+    </div>
     <p class="desc">更新するユーザー情報を入力してください</p>
     <form action="mgrUserUpdateInput.html" class="subpage-form">
       <div class="text-input">
         <label class="width80-label">ログインID</label>
-        <div class="err-msg-position">
-          <input type="text" id="loginId" name="loginId"　placeholder="ログインID" required>
-          <span class="error">ログインIDは必須です</span>
-        </div>
+        <input type="text" id="loginId" name="loginId" placeholder="ログインID" required>
       </div>
       <button type="submit" class="dicision-btn">検索</button>
     </form>
@@ -60,5 +58,7 @@
     <script type="text/javascript">document.write(new Date().getFullYear());</script>
     essop Inc.
   </footer>
+  <script src="js/validation.js"></script>
 </body>
+
 </html>

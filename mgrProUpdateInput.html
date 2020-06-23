@@ -2,13 +2,14 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>商品更新情報入力画面</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/common.css" rel="stylesheet">
-<link href="css/subpage.css" rel="stylesheet">
-<link href="css/manager.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <title>商品更新情報入力画面</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/subpage.css" rel="stylesheet">
+  <link href="css/manager.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,37 +40,25 @@
     </div>
     <div class="mgrpage-title-wrap">
       <h2>商品更新</h2>
-    </div> 
+    </div>
     <p class="desc">１箇所以上の項目を変更してください</p>
     <form action="mgrProUpdateConfirm.html" method="post" class="subpage-form">
       <div class="text-input">
         <label class="width80-label">商品名</label>
-        <div class="err-msg-position">
-          <input type="text" id="productName" name="productName" placeholder="商品名" value="テント" required>
-          <span class="error">商品名は必須です</span>
-        </div>
+        <input type="text" id="productName" name="productName" placeholder="商品名" value="テント" required>
       </div>
       <div class="text-input">
         <label class="width80-label">価格</label>
-        <div class="err-msg-position">
-          <input type="text" id="price" name="price" placeholder="価格(半角数字)" value="50000" pattern="^[0-9]+$" required>
-          <span class="error">価格は必須です</span>
-        </div>
+        <input type="text" id="price" name="price" placeholder="価格(半角数字)" value="50000" pattern="^[0-9]+$" required>
       </div>
       <div class="text-input">
         <label class="width80-label">仕入数</label>
-        <div class="err-msg-position">
-          <input type="text" id="perchase" name="perchase" value="10" placeholder="仕入数(半角数字)" pattern="^[0-9]+$" required>
-          <span class="error">仕入数は必須です</span>
-        </div>
+        <input type="text" id="purchase" name="purchase" value="10" placeholder="仕入数(半角数字)" pattern="^[0-9]+$" required>
       </div>
       <div class="text-input">
         <label class="width80-label">画像</label>
         <button>ファイルを選択</button>
-        <div class="err-msg-position">
-          <input type="text" id="imagePath" name="imagePath" placeholder="画像" value="img01" class="img-input" required>
-          <span class="error">画像は必須です</span>
-        </div>
+        <input type="text" id="imagePath" name="imagePath" placeholder="画像" value="img01" class="img-input" required>
       </div>
       <div class="text-input">
         <label class="width80-label">カテゴリー</label>
@@ -80,16 +69,13 @@
           <option value="4">キッズ</option>
           <option value="5">アクセサリー</option>
         </select>
-      </div>  
+      </div>
       <div class="text-input">
         <label class="width80-label">説明商品</label>
-        <div class="err-msg-position">
-          <textarea id="productText" cols="50" rows="6" name="productText" placeholder="説明商品" required>大きい</textarea>
-          <span class="error">商品説明は必須です</span>
-        </div>
+        <textarea id="productText" cols="50" rows="6" name="productText" placeholder="説明商品" required>大きい</textarea>
       </div>
       <div>
-        <button style="submit" class="dicision-btn">確認</button>
+        <button type="submit" class="dicision-btn">確認</button>
       </div>
     </form>
     <div class="back-to-top-page">
@@ -101,5 +87,7 @@
     <script type="text/javascript">document.write(new Date().getFullYear());</script>
     essop Inc.
   </footer>
+  <script src="js/validation.js"></script>
 </body>
+
 </html>

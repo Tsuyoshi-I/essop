@@ -88,9 +88,9 @@ textarea{
 
 .text-input > .rePass-label {
   display: inline-block;
-  -align: right;
-  margin-right: 20px;
-  width: 140px;
+  /* -align: right; */
+  /* margin-right: 20px; */
+  /* width: 140px; */
 }
 
 /* 商品検索プルダウン */

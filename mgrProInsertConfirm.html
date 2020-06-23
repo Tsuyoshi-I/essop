@@ -2,13 +2,14 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>商品登録確認画面</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/common.css" rel="stylesheet">
-<link href="css/subpage.css" rel="stylesheet">
-<link href="css/manager.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品登録確認画面</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/subpage.css" rel="stylesheet">
+  <link href="css/manager.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
     </div>
     <div class="mgrpage-title-wrap">
       <h2>商品登録確認</h2>
-    </div> 
+    </div>
     <p class="desc">この内容でよろしいですか？</p>
 
     <form action="mgrProInsertResult.html" method="post" class="subpage-form">
@@ -53,7 +54,7 @@
       </div>
       <div class="text-input">
         <label class="width80-label">仕入数</label>
-        <input type="text" name="perchase" placeholder="仕入数(半角数字)" value="10" readonly>
+        <input type="text" name="purchase" placeholder="仕入数(半角数字)" value="10" readonly>
       </div>
       <div class="text-input">
         <label class="width80-label">画像</label>
@@ -80,5 +81,7 @@
     <script type="text/javascript">document.write(new Date().getFullYear());</script>
     essop Inc.
   </footer>
+  <script src="js/validation.js"></script>
 </body>
+
 </html>

@@ -2,15 +2,16 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ユーザー登録画面</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーザー登録画面</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
     integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/common.css" rel="stylesheet">
-<link href="css/subpage.css" rel="stylesheet">
-<link href="css/manager.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/subpage.css" rel="stylesheet">
+  <link href="css/manager.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,65 +41,47 @@
       <h2>ユーザー管理</h2>
     </div>
     <div class="mgrpage-title-wrap">
-      <h2>ユーザー登録</h2>  
+      <h2>ユーザー登録</h2>
     </div>
-  <p class="desc">登録情報を入力してください</p>
-  <p class="error-msg">入力されたログインIDは既に使用されています</p>
-  <!-- <p class="error-msg">パスワードが一致しません</p> -->
-  <form action="mgrUserInsertConfirm.html" class="subpage-form">
-    <div class="text-input">
-      <label>ログインID</label>
-      <div class="err-msg-position">
+    <p class="desc">登録情報を入力してください</p>
+    <p class="error-msg">入力されたログインIDは既に使用されています</p>
+    <!-- <p class="error-msg">パスワードが一致しません</p> -->
+    <form action="mgrUserInsertConfirm.html" class="subpage-form">
+      <div class="text-input">
+        <label>ログインID</label>
         <input type="text" id="loginId" name="loginId" placeholder="ログインID" required>
-        <span class="error">ログインIDは必須です</span>
       </div>
-    </div>
-    <div class="text-input">
-      <label>氏名</label>
-      <div class="err-msg-position">
+      <div class="text-input">
+        <label>氏名</label>
         <input type="text" id="userName" name="userName" placeholder="氏名" required>
-        <span class="error">氏名は必須です</span>
       </div>
-    </div>
-    <div class="text-input">
-      <label>TEL</label>
-      <div class="err-msg-position">
+      <div class="text-input">
+        <label>TEL</label>
         <input type="text" id="tel" name="tel" placeholder="TEL(半角数字)" pattern="^[0-9]+$" required>
-        <span class="error">TELは必須です</span>
       </div>
-    </div>
-    <div class="text-input">
-      <label>住所</label>
-      <div class="err-msg-position">
+      <div class="text-input">
+        <label>住所</label>
         <input type="text" id="address" name="address" placeholder="住所" required>
-        <span class="error">住所は必須です</span>
       </div>
-    </div>
-    <div class="text-input">
-      <label>パスワード</label>
-      <div class="err-msg-position">
+      <div class="text-input">
+        <label>パスワード</label>
         <input type="password" id="pass" name="pass" placeholder="パスワード(半角英数)" required>
-        <span class="error">パスワードは必須です</span>
       </div>
-    </div>
-    <div class="text-input">
-      <label class="rePass-label">パスワード(再入力)</label>
-      <div class="err-msg-position">
+      <div class="text-input">
+        <label class="rePass-label">パスワード(再入力)</label>
         <input type="password" id="rePass" name="rePass" placeholder="パスワード(再入力)" required>
-        <span class="error">パスワード(再入力)は必須です</span>
       </div>
+      <div class="text-input">
+        <label>権限</label> <select name="roleId">
+          <option value="1">管理者</option>
+          <option value="2" selected>一般</option>
+        </select>
+      </div>
+      <button type="submit" class="dicision-btn">確認</button>
+    </form>
+    <div class="back-to-top-page">
+      <a href="mgrUser.html">戻る</a>
     </div>
-    <div class="text-input">
-      <label>権限</label> <select name="roleId">
-        <option value="1">管理者</option>
-        <option value="2" selected>一般</option>
-      </select>
-    </div>
-    <button type="submit" class="dicision-btn">確認</button>
-  </form>
-  <div class="back-to-top-page">
-    <a href="mgrUser.html">戻る</a>
-  </div>
   </main>
   <footer>
     ©
@@ -106,5 +89,7 @@
     essop Inc.
   </footer>
   <script src="js/passToggle.js"></script>
+  <script src="js/validation.js"></script>
 </body>
+
 </html>

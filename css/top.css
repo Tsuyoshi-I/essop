@@ -34,6 +34,10 @@
 /* ■ カテゴリー一覧-----------*/
 /* -------------------------*/
 
+.item-list-title {
+  font-family: 'Playfair Display', serif;
+}
+
 .item-list-title * {
   text-align: center;
 }
@@ -44,7 +48,6 @@
 }
 
 .item-list-title h2 {
-  font-family: 'EB Garamond', serif;
   font-size: 15px;
   font-weight: normal;
 }

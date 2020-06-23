@@ -2,13 +2,14 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>商品管理画面</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/common.css" rel="stylesheet">
-<link href="css/subpage.css" rel="stylesheet">
-<link href="css/manager.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <title>商品管理画面</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/subpage.css" rel="stylesheet">
+  <link href="css/manager.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,21 +40,21 @@
     </div>
     <div class="mgrpage-title-wrap">
       <h2>商品検索</h2>
-    </div> 
+    </div>
     <p class="desc">検索したい商品情報を入力してください</p>
     <form class="subpage-form">
       <div class="text-input">
         <label class="width80-label">カテゴリー</label>
-    	  <select class="pro-search">
-    	    <option selected>all</option>
-    	    <option>キャンプ</option>
-    	    <option>メンズ</option>
+        <select class="pro-search">
+          <option selected>all</option>
+          <option>キャンプ</option>
+          <option>メンズ</option>
           <option>ウィメンズ</option>
           <option>キッズ</option>
           <option>アクセサリー</option>
-    	  </select>
+        </select>
       </div>
-    	<div class="text-input">
+      <div class="text-input">
         <label class="width80-label">在庫数</label>
         <select class="pro-search">
           <option selected>all</option>
@@ -63,10 +64,10 @@
           <option>20点以下</option>
         </select>
       </div>
-      <button style="submit" class="dicision-btn">検索</button>
-      <button style="submit" class="dicision-btn">新規登録</button>
+      <button type="submit" class="dicision-btn">検索</button>
+      <button type="submit" class="dicision-btn">新規登録</button>
     </form>
-    <div  class="back-to-top-page">
+    <div class="back-to-top-page">
       <a href="mgrTop.html">戻る</a>
     </div>
   </main>
@@ -75,5 +76,7 @@
     <script type="text/javascript">document.write(new Date().getFullYear());</script>
     essop Inc.
   </footer>
+  <script src="js/validation.js"></script>
 </body>
+
 </html>

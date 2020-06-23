@@ -131,7 +131,9 @@ nav {
 
 .back-to-top-page a {
   border-radius: 4px;
-  padding: 5px 8px;
+  padding: 5px 0;
+  width: 160px;
+  display: inline-block;
   background-color: #777;
   font-size: 14px;
   color: white;
@@ -170,6 +172,18 @@ nav {
   border-color: red transparent transparent transparent;
   border-width: 20px 15px 6px 0px;
 }
+
+/* -------------------------*/
+/* ■ テーブル金額セル右寄せ --*/
+/* -------------------------*/
+.price-cell {
+  width: 90px;
+  text-align: right;
+}
+.price-cell.txal-center {
+  margin: 0 auto;
+}
+
 
 /* -------------------------*/
 /* ■ 確認メッセージ ---------*/
